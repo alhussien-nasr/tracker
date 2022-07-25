@@ -209,7 +209,7 @@ export const AddToDoScreen = ({navigation, route}) => {
       />
       <AppButton
         style={styles.btn}
-        title="add"
+        title="+"
         onPress={() => navigation.navigate('SelectExercise', {id})}
       />
     </Screen>
@@ -219,16 +219,15 @@ export const AddToDoScreen = ({navigation, route}) => {
 const styles = StyleSheet.create({
   row: {alignItems: 'center', flexDirection: 'row', marginBottom: 20},
   container: {
-    backgroundColor: 'black',
+    backgroundColor: 'rgb(234	,237	,244	)',
     paddingTop: 25,
     flex: 1,
   },
   itemContainer: {paddingHorizontal: 20},
   btn: {
-    width: '80%',
     alignSelf: 'center',
   },
-  text: {fontSize: 20, color: 'white'},
+  text: {fontSize: 20},
   dateStyle: {
     flexDirection: 'row',
     justifyContent: 'space-between',

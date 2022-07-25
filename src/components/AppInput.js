@@ -32,12 +32,11 @@ const styles = StyleSheet.create({
   },
   input: {
     flex: 1,
-    color: 'white',
     fontSize: 18,
   },
   labelContainer: {
     position: 'absolute',
-    backgroundColor: 'black',
+    backgroundColor: 'rgb(234	,237	,244	)',
     top: -12,
     left: 15,
     padding: 5,

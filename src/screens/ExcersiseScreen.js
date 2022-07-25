@@ -39,7 +39,6 @@ export const ExcersiseScreen = ({route, navigation}) => {
 
   return (
     <Screen style={styles.container}>
-      <Text>{item}</Text>
       <FlatList
         data={Excersise}
         renderItem={({item}) => {
@@ -65,7 +64,8 @@ export const ExcersiseScreen = ({route, navigation}) => {
         }}
       />
       <AppButton
-        title={'add'}
+        style={styles.btn}
+        title={'+'}
         onPress={() => navigation.navigate('AddExercise', {item})}
       />
     </Screen>
@@ -73,7 +73,7 @@ export const ExcersiseScreen = ({route, navigation}) => {
 };
 
 const styles = StyleSheet.create({
-  container: {flex: 1, backgroundColor: 'black'},
+  container: {flex: 1, backgroundColor: 'rgb(234	,237	,244	)'},
   card: {
     height: 60,
     justifyContent: 'center',
@@ -81,6 +81,6 @@ const styles = StyleSheet.create({
     borderBottomWidth: 0.5,
     borderColor: 'gray',
   },
-  text: {color: 'white', fontSize: 18},
-  modalBtn: {backgroundColor: 'blue'},
+  text: {fontSize: 18},
+  btn: {alignSelf: 'center'},
 });

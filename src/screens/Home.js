@@ -49,7 +49,7 @@ export const Home = ({navigation}) => {
       />
       <AppButton
         style={styles.btn}
-        title="add"
+        title="+"
         onPress={() => {
           dispatch(add(id));
           navigation.navigate('AddToDoScreen', {id});
@@ -67,14 +67,13 @@ const styles = StyleSheet.create({
     paddingTop: 20,
   },
   btn: {
-    width: '80%',
     alignSelf: 'center',
   },
-  text: {fontSize: 18, color: 'white'},
+  text: {fontSize: 18},
   date: {width: 60},
   itemContainer: {flexDirection: 'row'},
   box: {
-    backgroundColor: '#212121',
+    backgroundColor: 'white',
     marginLeft: 20,
     borderRadius: 10,
     flex: 1,

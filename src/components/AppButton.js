@@ -1,14 +1,12 @@
-import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
-import React from "react";
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import React from 'react';
 
-export const AppButton = ({ title, onPress, style, ...rest }) => {
+export const AppButton = ({title, onPress, style, ...rest}) => {
   return (
     <TouchableOpacity
       onPress={onPress}
-      
       style={[styles.button, style]}
-      {...rest}
-    >
+      {...rest}>
       <Text style={styles.text}>{title}</Text>
     </TouchableOpacity>
   );
@@ -16,11 +14,11 @@ export const AppButton = ({ title, onPress, style, ...rest }) => {
 
 const styles = StyleSheet.create({
   button: {
-    width: "100%",
     height: 60,
-    backgroundColor: "#ED4A4A",
+    width: 60,
+    backgroundColor: 'white',
     borderRadius: 30,
-    justifyContent: "center",
+    justifyContent: 'center',
   },
-  text: { textAlign: "center", color: "white", fontSize: 30 },
+  text: {textAlign: 'center', fontSize: 30},
 });
