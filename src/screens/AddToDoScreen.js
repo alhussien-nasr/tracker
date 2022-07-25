@@ -152,7 +152,7 @@ export const AddToDoScreen = ({navigation, route}) => {
                   return (
                     <View style={styles.card}>
                       <View style={styles.setNum}>
-                        <Text style={{color: 'white'}}>{setIndex + 1}</Text>
+                        <Text>{setIndex + 1}</Text>
                       </View>
 
                       <AppInput
@@ -264,6 +264,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    borderColor: 'white',
+    borderColor: 'black',
   },
 });
